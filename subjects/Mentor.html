@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="shortcut icon" type="png" href="images/icon/favicon.png">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Comaptible" content="IE=edge">
+	<title>Edumate</title>
+	<meta name="desciption" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="../script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script>
+		$(window).on('scroll', function () {
+			if ($(window).scrollTop()) {
+				$('nav').addClass('black');
+			} else {
+				$('nav').removeClass('black');
+			}
+		})
+	</script>
+</head>
+
+<body>
+	<!-- NAVIGATION -->
+	<header>
+		<div class="nav" id="nav">
+			<div id="learned-logo">
+				<a href="../index.html"><img src="../images/icon/New logo.png" style="width: 100px;"></a>
+			</div>
+			<div class="switch-tab" id="switch-tab" onclick="switchTAB()"><img src="../images/icon/menu.png"></div>
+			<ul id="list-switch">
+				<li><a href="jee.html"><img src="../images/courses/d1.png" class="icon">JEE</a></li>
+				<li><a href="gate.html"><img src="../images/courses/paper.png" class="icon">GATE</a></li>
+				<li><a href="computer_courses.html"><img src="../images/courses/computer.png" class="icon">Computer
+						Courses</a></li>
+				<li><a href="computer_courses.html#data"><img src="../images/courses/data.png" class="icon">Data
+						Structures</a></li>
+				<li><a href="computer_courses.html#algo"><img src="../images/courses/algo.png"
+							class="icon">Algorithm</a></li>
+			</ul>
+			<div class="search" id="search-switch">
+				<input type="search" placeholder="Search" class="srch"><button id="srchbtn"><img
+						src="../images/icon/search.png"></button>
+			</div>
+		</div>
+	</header>
+
+	<!-- Mentor Section -->
+ <div class="mentor">
+	<div class="mentor-container">
+        <h1>Mentor Support</h1>
+        <!-- Mentor Introduction -->
+        <section class="mentor-intro">
+            <h2>How We Can Help</h2><br>
+            <p>Our dedicated mentors are here to support you throughout your learning journey. Whether you need help understanding a concept, advice on career development, or feedback on your work, you can reach out to our experienced mentors for personalized guidance.</p>
+        </section>
+
+        <!-- Mentor Profiles Section -->
+        <section class="mentor-profiles">
+            <h2>Meet Our Mentors</h2>
+            <div class="mentor-grid">
+                <!-- Mentor Card 1 -->
+                <div class="mentor-card">
+                    <img src="../images/mentors/mentor2.jpg" alt="Mentor 1">
+                    <h3>Alice Smith</h3>
+                    <p>Expert in Core Java</p>
+                    <a href="mailto:alice.smith@example.com">Contact Alice</a>
+                </div>
+
+                <!-- Mentor Card 2 -->
+                <div class="mentor-card">
+                    <img src="../images/mentors/mentor1.jpg" alt="Mentor 2">
+                    <h3>Bob Johnson</h3>
+                    <p>Expert in Web Development</p>
+                    <a href="mailto:bob.johnson@example.com">Contact Bob</a>
+                </div>
+
+                <!-- Mentor Card 3 -->
+                <div class="mentor-card">
+                    <img src="../images/mentors/mentor3.jpg" alt="Mentor 3">
+                    <h3>Charlie Lee</h3>
+                    <p>Expert in Data Structures</p>
+                    <a href="mailto:charlie.lee@example.com">Contact Charlie</a>
+                </div>
+
+				<!-- Mentor Card 4 -->
+				<div class="mentor-card">
+                    <img src="../images/mentors/mentor4.jpg" alt="Mentor 1">
+                    <h3>Mary Williams</h3>
+                    <p>Expert in C++</p>
+                    <a href="mailto:alice.smith@example.com">Contact Mary</a>
+                </div>
+
+				<!-- Mentor Card 5 -->
+				<div class="mentor-card">
+                    <img src="../images/mentors/mentor5.jpg" alt="Mentor 1">
+                    <h3>David Williamson</h3>
+                    <p>Expert in Advanced Python</p>
+                    <a href="mailto:alice.smith@example.com">Contact David</a>
+                </div>
+
+				<!-- Mentor Card 6 -->
+				<div class="mentor-card">
+                    <img src="../images/mentors/mentor2.jpg" alt="Mentor 1">
+                    <h3>Alice Smith</h3>
+                    <p>Expert in Javascript</p>
+                    <a href="mailto:alice.smith@example.com">Contact Alice</a>
+                </div>
+
+				<!-- Mentor Card 7 -->
+				<div class="mentor-card">
+                    <img src="../images/mentors/mentor1.jpg" alt="Mentor 1">
+                    <h3>Bob Johnson</h3>
+                    <p>Expert in COA</p>
+                    <a href="mailto:alice.smith@example.com">Contact Bob</a>
+                </div>
+
+				<!-- Mentor Card 8 -->
+				<div class="mentor-card">
+                    <img src="../images/mentors/mentor5.jpg" alt="Mentor 1">
+                    <h3>David Williamson</h3>
+                    <p>Expert in DBMS</p>
+                    <a href="mailto:alice.smith@example.com">Contact David</a>
+                </div>
+
+                <!-- Mentor Card 9 -->
+				<div class="mentor-card">
+                    <img src="../images/mentors/mentor4.jpg" alt="Mentor 1">
+                    <h3>Mary Williams</h3>
+                    <p>Expert in Operating System</p>
+                    <a href="mailto:alice.smith@example.com">Contact Mary</a>
+                </div>
+
+                <!-- Mentor Card 10 -->
+				<div class="mentor-card">
+                    <img src="../images/mentors/mentor3.jpg" alt="Mentor 1">
+                    <h3>Charlie Lee</h3>
+                    <p>Expert in Networking</p>
+                    <a href="mailto:alice.smith@example.com">Contact Mary</a>
+                </div>
+
+                <!-- Add more mentor cards as needed -->
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form">
+            <h2 style="padding-bottom: 10px">Request Support</h2>
+            <form action="#" method="POST">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+				
+				<label for="subject">Your Subject</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Your Query</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+	</div>
+    
+	<!-- FOOTER -->
+	<footer>
+		<div class="footer-container">
+			<div class="left-col">
+				<img src="../images/icon/New logo.png" style="width: 200px;">
+				<div class="logo"></div>
+				<div class="social-media">
+					<a href="#"><img src="../images/icon\fb.png"></a>
+					<a href="#"><img src="../images/icon\insta.png"></a>
+					<a href="#"><img src="../images/icon\tt.png"></a>
+					<a href="#"><img src="../images/icon\ytube.png"></a>
+					<a href="#"><img src="../images/icon\linkedin.png"></a>
+				</div><br><br>
+				<p class="rights-text">Copyright © 2024 Created By Jayaprakash Biswal, All Rights Reserved.</p>
+				<br>
+				<p><img src="../images/icon/location.png"> Trident Academy of Technology<br>Infocity,Bhubaneswar</p><br>
+				<p><img src="../images/icon/phone.png"> +91-9861881759<br><img src="../images/icon/mail.png">&nbsp;
+					edumate@gmail.com</p>
+			</div>
+			<div class="right-col">
+				<h1 style="color: #fff">Our Newsletter</h1>
+				<div class="border"></div><br>
+				<p>Enter Your Email to get our News and updates.</p>
+				<form class="newsletter-form">
+					<input class="txtb" type="email" placeholder="Enter Your Email">
+					<input class="btn" type="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

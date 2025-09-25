@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="png" href="images/icon/favicon.png">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Comaptible" content="IE=edge">
+	<title>Edumate</title>
+	<meta name="desciption" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="../script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script>
+		$(window).on('scroll', function () {
+			if ($(window).scrollTop()) {
+				$('nav').addClass('black');
+			} else {
+				$('nav').removeClass('black');
+			}
+		})
+	</script>
+</head>
+
+<body>
+	<!-- NAVIGATION -->
+	<header>
+		<div class="nav" id="nav">
+			<div id="learned-logo">
+				<a href="../index.html"><img src="../images/icon/New logo.png" style="width: 100px;"></a>
+			</div>
+			<div class="switch-tab" id="switch-tab" onclick="switchTAB()"><img src="../images/icon/menu.png"></div>
+			<ul id="list-switch">
+				<li><a href="jee.html"><img src="../images/courses/d1.png" class="icon">JEE</a></li>
+				<li><a href="gate.html"><img src="../images/courses/paper.png" class="icon">GATE</a></li>
+				<li><a href="computer_courses.html"><img src="../images/courses/computer.png" class="icon">Computer
+						Courses</a></li>
+				<li><a href="computer_courses.html#data"><img src="../images/courses/data.png" class="icon">Data
+						Structures</a></li>
+				<li><a href="computer_courses.html#algo"><img src="../images/courses/algo.png"
+							class="icon">Algorithm</a></li>
+			</ul>
+			<div class="search" id="search-switch">
+				<input type="search" placeholder="Search" class="srch"><button id="srchbtn"><img
+						src="../images/icon/search.png"></button>
+			</div>
+		</div>
+	</header>
+	<br>
+	<div class="head1">
+		<div class="report-container">
+			<h1>Performance and Ranking Report</h1>
+			<!-- Ranking Section -->
+			<section class="ranking">
+				<h2>Leaderboard</h2>
+				<table class="ranking-table">
+					<thead>
+						<tr>
+							<th>Rank</th>
+							<th>Name</th>
+							<th>Course Progress</th>
+							<th>Quiz Score</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>Alice</td>
+							<td>100%</td>
+							<td>95%</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>Bob</td>
+							<td>95%</td>
+							<td>90%</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>Charlie</td>
+							<td>90%</td>
+							<td>88%</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>David</td>
+							<td>88%</td>
+							<td>85%</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td>Eva</td>
+							<td>85%</td>
+							<td>80%</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<!-- Summary Section -->
+			<section class="summary">
+				<h2>Summary</h2>
+				<p>The above report highlights individual performance metrics such as course completion, quiz scores,
+					and assignment grades. The leaderboard ranks the top 5 performers based on their overall performance
+					in the course.</p>
+			</section>
+		</div>
+	</div>
+
+
+	<!-- FOOTER -->
+	<footer>
+		<div class="footer-container">
+			<div class="left-col">
+				<img src="../images/icon/New logo.png" style="width: 200px;">
+				<div class="logo"></div>
+				<div class="social-media">
+					<a href="#"><img src="../images/icon\fb.png"></a>
+					<a href="#"><img src="../images/icon\insta.png"></a>
+					<a href="#"><img src="../images/icon\tt.png"></a>
+					<a href="#"><img src="../images/icon\ytube.png"></a>
+					<a href="#"><img src="../images/icon\linkedin.png"></a>
+				</div><br><br>
+				<p class="rights-text">Copyright © 2024 Created By Jayaprakash Biswal, All Rights Reserved.</p>
+				<br>
+				<p><img src="../images/icon/location.png"> Trident Academy of Technology<br>Infocity,Bhubaneswar</p><br>
+				<p><img src="../images/icon/phone.png"> +91-9861881759<br><img src="../images/icon/mail.png">&nbsp;
+					edumate@gmail.com</p>
+			</div>
+			<div class="right-col">
+				<h1 style="color: #fff">Our Newsletter</h1>
+				<div class="border"></div><br>
+				<p>Enter Your Email to get our News and updates.</p>
+				<form class="newsletter-form">
+					<input class="txtb" type="email" placeholder="Enter Your Email">
+					<input class="btn" type="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

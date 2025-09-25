@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="shortcut icon" type="png" href="images/icon/favicon.png">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Comaptible" content="IE=edge">
+	<title>Edumate</title>
+	<meta name="desciption" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script>
+		$(window).on('scroll', function () {
+			if ($(window).scrollTop()) {
+				$('nav').addClass('black');
+			} else {
+				$('nav').removeClass('black');
+			}
+		})
+	</script>
+</head>
+
+<body>
+	<!-- Navigation Bar -->
+	<header id="header">
+		<nav>
+			<div class="logo"><a href="index.html"><img src="images/icon/New logo.png" alt="logo"></a></div>
+			<ul>
+				<li><a class="active" href="">Home</a></li>
+				<li><a href="#team_section">Team</a></li>
+				<li><a href="#services_section">Services</a></li>
+				<li><a href="#contactus_section">Contact</a></li>
+			</ul>
+			<div class="srch"><input type="text" class="search" placeholder="Search here..."><img
+					src="images/icon/search.png" alt="search" onclick=slide()></div>
+			<a class="get-started" href="login.php">Get Started</a>
+			<img src="images/icon/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
+		</nav>
+		<div class="head-container">
+			<div class="quote">
+				<p>The beautiful thing about learning is that nobody can take it away from you</p>
+				<h5>Education is the process of facilitating learning, or the acquisition of knowledge, skills, values,
+					beliefs, and habits. Educational methods include teaching, training, storytelling, discussion and
+					directed research!</h5>
+
+			</div>
+			<div class="svg-image">
+				<img src="images/extra/svg1.jpg" alt="svg">
+			</div>
+			<marquee style="background: linear-gradient(to right, #FA4B37, #DF2771); margin-top: 110px;"
+				direction="left" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="20">
+				<div class="marqu">“Education is the passport to the future, for tomorrow belongs to those who prepare
+					for it today.” “Your attitude, not your aptitude, will determine your altitude.” “If you think
+					education is expensive, try ignorance.” “The only person who is educated is the one who has learned
+					how to learn …and change.”</div>
+			</marquee>
+		</div>
+	</header>
+
+	<!-- FOOTER -->
+	<footer>
+		<div class="footer-container">
+			<div class="left-col">
+				<img src="images/icon/New logo.png" style="width: 200px;">
+				<div class="logo"></div>
+				<div class="social-media">
+					<a href="#"><img src="images/icon\fb.png"></a>
+					<a href="#"><img src="images/icon\insta.png"></a>
+					<a href="#"><img src="images/icon\tt.png"></a>
+					<a href="#"><img src="images/icon\ytube.png"></a>
+					<a href="#"><img src="images/icon\linkedin.png"></a>
+				</div><br><br>
+				<p class="rights-text">Copyright © 2024 Created By Jayaprakash Biswal, All Rights Reserved.</p>
+				<br>
+				<p><img src="images/icon/location.png"> Trident Academy of Technology<br>Infocity,Bhubaneswar</p><br>
+				<p><img src="images/icon/phone.png"> +91-9861881759<br><img src="images/icon/mail.png">&nbsp;
+					edumate@gmail.com</p>
+			</div>
+			<div class="right-col">
+				<h1 style="color: #fff">Our Newsletter</h1>
+				<div class="border"></div><br>
+				<p>Enter Your Email to get our News and updates.</p>
+				<form class="newsletter-form">
+					<input class="txtb" type="email" placeholder="Enter Your Email">
+					<input class="btn" type="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>
