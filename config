@@ -1,0 +1,19 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[remote "armish"]
+	url = https://github.com/34armish/Edumate_Learning.git
+	fetch = +refs/heads/*:refs/remotes/armish/*
+[gui]
+	wmstate = normal
+	geometry = 1197x627+32+32 225 286
+[remote "origin"]
+	url = https://github.com/34armish/Edumate_learning.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "main"]
+	remote = origin
+	merge = refs/heads/main
